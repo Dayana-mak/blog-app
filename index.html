@@ -1,11 +1,46 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Document</title>
+  <title>Блог</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap" rel="stylesheet">
+  
+  <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-  
+  <h1>Приложение Блог</h1>
+
+  <div class="row">
+
+    <div class="col">
+      <h2>Новый пост</h2>
+      <input 
+        class="js-post-title-input post-title-input" 
+        type="text" 
+        placeholder="Заголовок">
+
+      <textarea 
+        class="js-post-text-input post-text-input"
+        placeholder="Напиши пост"></textarea>
+      <button class="js-post-btn new-post-btn">Опубликовать</button>
+
+      <div id="js-validation-message" class="validation-message validation-message_hidden"></div>
+    </div>
+
+    <div class="col">
+      <h2>Лента</h2>
+ 
+      <div class="js-posts posts">
+        <p class="posts-empty">Тут пока пусто...</p>
+      </div>
+
+    </div>
+  </div>
+    
+  <script src="index.js"></script>
 </body>
 </html>
